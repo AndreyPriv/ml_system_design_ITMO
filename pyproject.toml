@@ -1,0 +1,30 @@
+[tool.ruff]
+line-length = 88  
+select = ["E", "F", "W", "C", "N"]  
+ignore = ["E501"]  
+fixable = ["ALL"]  
+exclude = [
+    ".git",
+    "__pycache__",
+    "venv",
+    "build",
+    "dist",
+]  
+
+[tool.black]
+line-length = 88  
+target-version = ["py39"]  
+skip-string-normalization = false  
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''  
