@@ -27,15 +27,13 @@
 ```bash
 curl -X 'POST' \
   'http://37.27.217.215:8000/translate' \
+  -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
-    "text": "Привет, как дела?",
-    "src_lang": "rus_Cyrl",
-    "tgt_lang": "mns_Cyrl"
-  }
-
-
-
+  "text": "Привет, как дела?",
+  "src_lang": "rus_Cyrl",
+  "tgt_lang": "mns_Cyrl"
+}'
 ```
 Для удобного тестирования API через браузер, используйте интерфейс Swagger UI:
 
