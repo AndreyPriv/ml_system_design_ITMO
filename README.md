@@ -30,10 +30,13 @@ curl -X 'POST' \
   'http://37.27.217.215:8000/translate' \
   -H 'Content-Type: application/json' \
   -d '{
-    "source_text": "Привет, как дела?",
-    "source_lang": "ru",
-    "target_lang": "en"
+    "text": "Привет, как дела?",
+    "src_lang": "rus_Cyrl",
+    "tgt_lang": "mns_Cyrl"
   }
+
+
+
 ```
 Для удобного тестирования API через браузер, используйте интерфейс Swagger UI:
 
@@ -52,10 +55,11 @@ curl -X 'POST' \
 ### Запрос
 
 ```json
+
 {
-  "source_text": "Привет, как дела?",
-  "source_lang": "ru",
-  "target_lang": "en"
+  "text": "Привет, как дела?",
+  "src_lang": "rus_Cyrl",
+  "tgt_lang": "mns_Cyrl"
 }
 ```
 
